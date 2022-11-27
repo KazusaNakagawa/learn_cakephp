@@ -11,5 +11,3 @@ RUN apk --no-cache update \
     && docker-php-ext-enable intl
 
 WORKDIR /var/www
-
-RUN composer self-update && composer -y create-project --prefer-dist cakephp/app:4.* .
